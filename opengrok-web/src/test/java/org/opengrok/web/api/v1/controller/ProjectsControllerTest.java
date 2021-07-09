@@ -206,7 +206,7 @@ class ProjectsControllerTest extends OGKJerseyTest {
         addProject("svn");
 
         assertEquals(3, env.getProjects().size());
-        assertEquals(4, env.getRepositories().size());
+        assertEquals(3, env.getRepositories().size());
         assertTrue(env.getProjects().containsKey("git"));
         assertTrue(env.getProjects().containsKey("svn"));
 
@@ -275,7 +275,7 @@ class ProjectsControllerTest extends OGKJerseyTest {
         addProject("svn");
 
         assertEquals(3, env.getProjects().size());
-        assertEquals(3, env.getRepositories().size());
+        assertEquals(2, env.getRepositories().size());
         assertEquals(3, env.getProjectRepositoriesMap().size());
 
         // Check the group was populated properly.
